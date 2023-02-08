@@ -191,7 +191,7 @@ body {
 }
 
 .card + .card {
-  margin-top: 16px;
+  margin-top: calc(16px + 24px);
 }
 
 p {
@@ -301,6 +301,10 @@ header {
   padding: 0 28px;
 }
 
+.card-course {
+  position: relative;
+}
+
 .card-course h3 {
   margin-top: 56px;
 }
@@ -313,7 +317,17 @@ header {
   margin-bottom: 32px;
 }
 
-
+.card-course::before {
+  content: '';
+  display: block;
+  position: absolute;
+  background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+  width: 56px;
+  height: 56px;
+  left: 28px;
+  top: -24px;
+  border-radius: 50%;
+}
 
 
 /* FOOTER */
