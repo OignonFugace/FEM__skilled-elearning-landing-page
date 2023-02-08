@@ -281,6 +281,10 @@ header {
 
 
 /* HERO SECTION */
+.hero-section {
+  display: grid;
+}
+
 .hero-section__title {
   margin-top: 38px;
 }
@@ -370,6 +374,16 @@ footer {
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 568px) {
+  /* HERO SECTION */
+  .hero-section {
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+  }
+  .hero-section__content {
+    width: 85%;
+  }
+
+  /* COURSES SECTION */
   .courses-section {
     grid-template-columns: 1fr 1fr;
   }
@@ -384,6 +398,8 @@ footer {
 }
 
 @media screen and (min-width: 1024px) {
+
+  /* COURSES SECTION */
   .courses-section {
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
