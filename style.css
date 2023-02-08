@@ -190,13 +190,17 @@ body {
   background: linear-gradient(180deg, #FFFFFF 0%, #F7F8FF 41.67%, #F1F2FF 93.23%, #F0F1FF 100%);
 }
 
-.card + .card {
+.card {
   margin-top: calc(16px + 24px);
 }
 
 p {
   font-size: var(--fs-b);
   color: var(--grey-color);
+}
+
+h1, h2, h3 {
+  line-height: initial;
 }
 
 h1 {
@@ -275,12 +279,13 @@ header {
   margin-top: 1rem;
 }
 
+
 /* HERO SECTION */
 .hero-section__title {
   margin-top: 38px;
 }
 
-.hero-section-subhead {
+.hero-section__subhead {
   margin-top: 26px;
 }
 
@@ -289,13 +294,24 @@ header {
 }
 
 .hero-section__image {
+  margin: 0 calc((100% - 100vw) / 2 - 60px);
   margin-top: 46px;
+}
+.hero-section__image img {
+  margin: 0 auto;
 }
 
 
 /* COURSE SECTION */
+.courses-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 16px;
+}
+
 .card {
-  display: flow-root;
+  display: grid;
+  align-content: space-between;
   background-color: var(--white-color);
   border-radius: var(--br);
   padding: 0 28px;

@@ -34,7 +34,8 @@ This is a solution to the Skilled e-learning landing page challenge on [Frontend
 
 ### What I learned
 - This was the first time I used custom properties to define globaly font related properties. 
-- Why doesn't `transition` property work for `background` property that has a `linear-gradient` ?  
+- Why doesn't `transition` property work for `background` property that has a `linear-gradient` ?
+- Use of CSS Grid layout system, both for the courses cards section and for the cards themselves (keeping the "Get Started" button at the bottom of each card in a consistent fashion).  
 
 
 ### Questions to community
