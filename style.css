@@ -271,6 +271,7 @@ h3 {
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-top: 1rem;
 }
 
@@ -313,4 +314,17 @@ header {
 }
 
 
-/*  */
+
+
+/* FOOTER */
+.content-wrapper.footer {
+  background-color: var(--bunting-color);
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
