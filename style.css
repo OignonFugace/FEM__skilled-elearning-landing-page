@@ -135,6 +135,8 @@ select {
   --cold-gradient: linear-gradient(rgba(72, 81, 255), rgba(240, 42, 166));
   --cold-gradient-hover: linear-gradient(rgb(72, 81, 255, 0.5), rgb(240, 42, 166, 0.5));
 
+  --contentWidth: 1110px;
+
   --ff: 'Plus Jakarta Sans', sans-serif;
 
   --fw-m: 500;
@@ -178,8 +180,7 @@ select {
 }
 
 .content-wrapper {
-  max-width: 1110px;
-  margin: 0 auto;
+  padding: 0 max(1rem, 50% - var(--contentWidth) / 2);
 }
 
 
