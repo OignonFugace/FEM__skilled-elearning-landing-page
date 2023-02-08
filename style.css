@@ -136,6 +136,7 @@ select {
   --cold-gradient-hover: linear-gradient(rgb(72, 81, 255, 0.5), rgb(240, 42, 166, 0.5));
 
   --contentWidth: 1110px;
+  --br: 10px;
 
   --ff: 'Plus Jakarta Sans', sans-serif;
 
@@ -180,13 +181,17 @@ select {
 }
 
 .content-wrapper {
-  padding: 0 max(1rem, 50% - var(--contentWidth) / 2);
+  padding: 0 max(max(1rem, 5%), 50% - var(--contentWidth) / 2);
 }
-
 
 body {
   font-family: var(--ff);
   color: var(--bunting-color);
+  background: linear-gradient(180deg, #FFFFFF 0%, #F7F8FF 41.67%, #F1F2FF 93.23%, #F0F1FF 100%);
+}
+
+.card + .card {
+  margin-top: 16px;
 }
 
 p {
@@ -208,3 +213,104 @@ h3 {
   font-size: var(--fs-h3);
   font-weight: var(--fw-xb);
 }
+
+/* BUTTON */
+.btn {
+  cursor: pointer;
+  border: none;
+  color: var(--white-color);
+  font-size: var(--fs-b);
+  font-weight: var(--fw-b);
+  border-radius: 3rem;
+  padding: 9px 24px 11px;
+  transition: .15s ease;
+}
+
+.btn-dark {
+  background-color: var(--bunting-color);
+}
+.btn-dark:hover, 
+.btn-dark:focus {
+  background-color: var(--scampi-color);
+}
+
+.btn-warm {
+  background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+  padding: 15px 38px;
+}
+.btn-warm:hover, 
+.btn-warm:focus {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+}
+
+.btn-cold {
+  background: linear-gradient(180deg, #4851FF 0%, #F02AA6 100%);
+  padding: 9px 24px 11px;
+}
+.btn-cold:hover, 
+.btn-cold:focus {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%, #F02AA6 100%);
+}
+
+.btn-link {
+  text-decoration: none;
+  color: var(--violet-red-color);
+  font-size: var(--fs-b-m);
+  font-weight: var(--fw-b);
+  transition: .15s ease;
+}
+.btn-link:hover, 
+.btn-link:focus {
+  color: var(--carnation-pink-color);
+}
+
+
+
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+/* HERO SECTION */
+.hero-section__title {
+  margin-top: 38px;
+}
+
+.hero-section-subhead {
+  margin-top: 26px;
+}
+
+.hero-section__button {
+  margin-top: 24px;
+}
+
+.hero-section__image {
+  margin-top: 46px;
+}
+
+
+/* COURSE SECTION */
+.card {
+  display: flow-root;
+  background-color: var(--white-color);
+  border-radius: var(--br);
+  padding: 0 28px;
+}
+
+.card-course h3 {
+  margin-top: 56px;
+}
+.card-course p {
+  margin-top: 16px;
+}
+.card-course .btn-link {
+  display: block;
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+
+
+/*  */
