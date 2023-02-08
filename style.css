@@ -174,7 +174,7 @@ select {
 
 
 
-/* SITE LAYOUT & GLOBAL STYLE*/
+/* SITE LAYOUT & GLOBAL STYLE */
 #site-wrapper {
   max-width: 1440px;
   margin: 0 auto;
@@ -269,8 +269,6 @@ h3 {
 }
 
 
-
-
 /* HEADER */
 header {
   display: flex;
@@ -301,6 +299,7 @@ header {
   margin: 0 calc((100% - 100vw) / 2 - 60px);
   margin-top: 46px;
 }
+
 .hero-section__image img {
   margin: 0 auto;
 }
@@ -374,13 +373,33 @@ footer {
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 568px) {
+  /* HEADER */
+  header {
+    margin-top: 24px;
+  }
+
   /* HERO SECTION */
   .hero-section {
-    grid-template-columns: 2fr 1fr;
-    align-items: center;
+    grid-template-columns: 2fr 230px;
   }
+
   .hero-section__content {
+    align-self: center;
     width: 85%;
+  }
+
+  .hero-section__image {
+    position: relative;
+    /* outline: 2px solid red; */
+    height: 470px;
+    margin: 0;
+  }
+  
+  .hero-section__image img {
+    position: absolute;
+    top: 80px;
+    left: 70px;
+    transform: scale(2.5);
   }
 
   /* COURSES SECTION */
