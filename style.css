@@ -184,6 +184,21 @@ select {
   padding: 0 max(max(1rem, 4%), 50% - var(--contentWidth) / 2);
 }
 
+header {
+  position: relative;
+  z-index: 10;
+}
+
+main {
+  position: relative;
+  z-index: 0;
+}
+
+footer {
+  position: relative;
+  z-index: 10;
+}
+
 body {
   font-family: var(--ff);
   color: var(--bunting-color);
@@ -405,6 +420,7 @@ footer {
   /* COURSES SECTION */
   .courses-section {
     grid-template-columns: 1fr 1fr;
+    margin-top: 30px;
   }
 
   .card {
