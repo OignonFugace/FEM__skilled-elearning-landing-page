@@ -33,6 +33,8 @@ This is a solution to the Skilled e-learning landing page challenge on [Frontend
 
 
 ### What I learned
+- This was the first time I used custom properties to define globaly font related properties. 
+- 
 
 
 ### Questions to community
