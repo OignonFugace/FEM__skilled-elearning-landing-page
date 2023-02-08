@@ -31,36 +31,6 @@
 }
 
 
-/* SITE'S GLOBALS */
-:root {
-    --scampi-color: #666CA3;
-    --bunting-color: #13183F;
-    --grey-color: #83869A;
-    --violet-red-color: #F74780;
-    --carnation-pink-color: #FFA7C3;
-    --white-color: #FFFFFF;
-    --warm-gradient: linear-gradient(rgb(240, 42, 166), rgb(255, 111, 72));
-    --warm-gradient-hover: linear-gradient(rgba(240, 42, 166, 0.5), rgba(255, 111, 72, 0.5));
-    --cold-gradient: linear-gradient(rgba(72, 81, 255), rgba(240, 42, 166));
-    --cold-gradient-hover: linear-gradient(rgb(72, 81, 255, 0.5), rgb(240, 42, 166, 0.5));
-
-    --ff: 'Plus Jakarta Sans';
-
-    --fw-m: 500;
-    --fw-b: 700;
-    --fw-xb: 800;
-
-    --fs-h-xl: 56px;
-    --fs-h-l: 40px;
-    --fs-h-m: 32px;
-    --fs-h-s: 24px;
-    --fs-b-m: 18px;
-    --fs-b-s: 16px;
-
-    --lh-h-m: 40px;
-    --lh-b-m: 28px;
-    --lh-b-s: 28px;
-  }
 
 
 /* RESET */
@@ -149,11 +119,91 @@ select {
 }
 
 
-/* SITE LAYOUT */
-#site-wrapper {
-  max-width: 1440px;
+
+
+
+/* SITE'S GLOBALS */
+:root {
+  --scampi-color: #666CA3;
+  --bunting-color: #13183F;
+  --grey-color: #83869A;
+  --violet-red-color: #F74780;
+  --carnation-pink-color: #FFA7C3;
+  --white-color: #FFFFFF;
+  --warm-gradient: linear-gradient(rgb(240, 42, 166), rgb(255, 111, 72));
+  --warm-gradient-hover: linear-gradient(rgba(240, 42, 166, 0.5), rgba(255, 111, 72, 0.5));
+  --cold-gradient: linear-gradient(rgba(72, 81, 255), rgba(240, 42, 166));
+  --cold-gradient-hover: linear-gradient(rgb(72, 81, 255, 0.5), rgb(240, 42, 166, 0.5));
+
+  --ff: 'Plus Jakarta Sans', sans-serif;
+
+  --fw-m: 500;
+  --fw-b: 700;
+  --fw-xb: 800;
+
+  --fs-h-xl: 56px;
+  --fs-h-l: 40px;
+  --fs-h-m: 32px;
+  --fs-h-s: 24px;
+  --fs-b-m: 18px;
+  --fs-b-s: 16px;
+
+  --lh-h-m: 40px;
+  --lh-b-m: 28px;
+  --lh-b-s: 28px;
+
+  /* Mobile & tablet specific styles */
+  --fs-h1: var(--fs-h-l);
+  --fs-h2: var(--fs-h-s);
+  --fs-h3: 20px;
+  --fs-b: var(--fs-b-s);
 }
 
-.site-content {
+@media screen and (min-width: 1024px) {
+  /* Desktop spcific styles */
+  :root {
+    --fs-h1: var(--fs-h-xl);
+    --fs-h2: var(--fs-h-m);
+    --fs-h3: var(--fs-h-s);
+    --fs-b: var(--fs-b-m)
+  }
+}
+
+
+
+/* SITE LAYOUT & GLOBAL STYLE*/
+#site-wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.content-wrapper {
   max-width: 1110px;
+  margin: 0 auto;
+}
+
+
+body {
+  font-family: var(--ff);
+  color: var(--bunting-color);
+}
+
+p {
+  font-size: var(--fs-b);
+  color: var(--grey-color);
+}
+
+h1 {
+  font-size: var(--fs-h1);
+  font-weight: var(--fw-xb);
+}
+
+h2 {
+  font-size: var(--fs-h2);
+  font-weight: var(--fw-xb);
+}
+
+h3 {
+  font-size: var(--fs-h3);
+  font-weight: var(--fw-xb);
 }
