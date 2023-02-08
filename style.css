@@ -438,9 +438,31 @@ footer {
   .courses-section {
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+    margin-top: 50px;
   }
 
   .card .btn-link {
     margin-bottom: 40px;
   }
+
+
+  /* HERO SECTION */
+  .hero-section {
+    grid-template-columns: 1fr 550px;
+  }
+
+  .hero-section__content {
+    width: 82%;
+  }
+
+  .hero-section__image {
+    height: 700px;
+  }
+
+  .hero-section__image img {
+    top: 30px;
+    left: 240px;
+    transform: scale(1.9);
+  }
+
 }
