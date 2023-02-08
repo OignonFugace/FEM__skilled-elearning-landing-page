@@ -438,6 +438,21 @@ footer {
     background: linear-gradient(180deg, #FFFFFF 0%, #F7F8FF 41.67%, #F1F2FF 93.23%, #F0F1FF 100%) at 0% 700px;
   } */
 
+
+  /* BUTTONS */
+  .btn-dark {
+    padding: 14px 32px;
+  }
+
+  .btn-warm {
+    padding: 19px 32px;
+  }
+
+  .btn-cold {
+    padding: 14px 32px;
+  }
+
+
   /* COURSES SECTION */
   .courses-section {
     grid-template-columns: repeat(3, 1fr);
@@ -456,7 +471,7 @@ footer {
   }
 
   .hero-section__content {
-    width: 82%;
+    width: 85%;
   }
 
   .hero-section__image {
