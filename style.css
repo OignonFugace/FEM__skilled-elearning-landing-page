@@ -318,7 +318,7 @@ header {
 }
 
 .card-course::before {
-  content: '';
+  content: var(--icon-path);
   display: block;
   position: absolute;
   background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
