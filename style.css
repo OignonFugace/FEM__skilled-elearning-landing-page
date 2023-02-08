@@ -433,6 +433,10 @@ footer {
 }
 
 @media screen and (min-width: 1024px) {
+  /* SITE LAYOUT & GLOBAL STYLE */
+  /* body {
+    background: linear-gradient(180deg, #FFFFFF 0%, #F7F8FF 41.67%, #F1F2FF 93.23%, #F0F1FF 100%) at 0% 700px;
+  } */
 
   /* COURSES SECTION */
   .courses-section {
