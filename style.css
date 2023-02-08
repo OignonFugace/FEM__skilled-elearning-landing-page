@@ -31,17 +31,30 @@
 }
 
 
-/* COLOR PALETTE */
+/* SITE'S GLOBALS */
 :root {
     --scampi-color: #666CA3;
     --bunting-color: #13183F;
     --grey-color: #83869A;
     --violet-red-color: #F74780;
     --carnation-pink-color: #FFA7C3;
-    --white-colro: #FFFFFF;
+    --white-color: #FFFFFF;
     --warm-gradient: linear-gradient(rgb(240, 42, 166), rgb(255, 111, 72));
     --warm-gradient-hover: linear-gradient(rgba(240, 42, 166, 0.5), rgba(255, 111, 72, 0.5));
     --cold-gradient: linear-gradient(rgba(72, 81, 255), rgba(240, 42, 166));
     --cold-gradient-hover: linear-gradient(rgb(72, 81, 255, 0.5), rgb(240, 42, 166, 0.5));
+
+    --ff: 'Plus Jakarta Sans';
+
+    --fw-m: 500;
+    --fw-b: 700;
+    --fw-xb: 800;
+
+    --fs-h-xl: 56px;
+    --fs-h-l: 40px;
+    --fs-h-m: 32px;
+    --fs-h-s: 24px;
+    --fs-b-m: 18px;
+    --fs-b-s: 16px;
 }
 
