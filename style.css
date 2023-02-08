@@ -203,6 +203,7 @@ body {
   font-family: var(--ff);
   color: var(--bunting-color);
   background: linear-gradient(180deg, #FFFFFF 0%, #F7F8FF 41.67%, #F1F2FF 93.23%, #F0F1FF 100%);
+  overflow-x: hidden;
 }
 
 .card {
@@ -290,6 +291,10 @@ header {
   justify-content: space-between;
   align-items: center;
   margin-top: 1rem;
+}
+
+.site-logo {
+  width: 89px;
 }
 
 
@@ -438,6 +443,10 @@ footer {
     background: linear-gradient(180deg, #FFFFFF 0%, #F7F8FF 41.67%, #F1F2FF 93.23%, #F0F1FF 100%) at 0% 700px;
   } */
 
+  /* HEADER */
+  .site-logo {
+    width: 114px;
+  }
 
   /* BUTTONS */
   .btn-dark {
