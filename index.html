@@ -25,7 +25,11 @@
             <button class="hero-section__button btn btn-warm">Get Started</button>
           </div>
           <div class="hero-section__image">
-            <img src="./assets/img/image-hero-mobile.png" alt="Members count: 29k ; Course hours count: 1,451">
+            <picture>
+              <source media="(min-width: 1024px)" srcset="./assets/img/image-hero-desktop.png">
+              <source media="(min-width: 568px)" srcset="./assets/img/image-hero-tablet.png">
+              <img src="./assets/img/image-hero-mobile.png" alt="Members count: 29k ; Course hours count: 1,451">
+            </picture>
           </div>
         </div>
 
