@@ -305,9 +305,9 @@ header {
 /* COURSE SECTION */
 .courses-section {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-  gap: 16px;
+  gap: 10px;
 }
+
 
 .card {
   display: grid;
@@ -364,4 +364,32 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 568px) {
+  .courses-section {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .card {
+    padding: 0 32px;
+  }
+
+  .card h2 {
+    padding-top: 56px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .courses-section {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  .card .btn-link {
+    margin-bottom: 40px;
+  }
 }
