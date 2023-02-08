@@ -181,7 +181,7 @@ select {
 }
 
 .content-wrapper {
-  padding: 0 max(max(1rem, 5%), 50% - var(--contentWidth) / 2);
+  padding: 0 max(max(1rem, 4%), 50% - var(--contentWidth) / 2);
 }
 
 body {
@@ -301,6 +301,12 @@ header {
   padding: 0 28px;
 }
 
+.card-title {
+  color: var(--white-color);
+  background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+  padding: 24px 29px 32px;
+}
+
 .card-course {
   position: relative;
 }
@@ -333,6 +339,7 @@ header {
 /* FOOTER */
 .content-wrapper.footer {
   background-color: var(--bunting-color);
+  margin-top: 80px;
   padding-top: 36px;
   padding-bottom: 36px;
 }
