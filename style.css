@@ -493,4 +493,11 @@ footer {
     transform: scale(1.9);
   }
 
+  /* FOOTER */
+  .content-wrapper.footer {
+    margin-top: 140px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
 }
