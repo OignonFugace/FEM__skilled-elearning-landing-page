@@ -144,21 +144,21 @@ select {
     --fw-b: 700;
     --fw-xb: 800;
 
-    --fs-h-xl: 56px;
-    --fs-h-l: 40px;
-    --fs-h-m: 32px;
-    --fs-h-s: 24px;
-    --fs-b-m: 18px;
-    --fs-b-s: 16px;
+    --fs-h-xl: 3.5rem;
+    --fs-h-l: 2.5rem;
+    --fs-h-m: 2rem;
+    --fs-h-s: 1.5rem;
+    --fs-b-m: 1.125rem;
+    --fs-b-s: 1rem;
 
-    --lh-h-m: 40px;
-    --lh-b-m: 28px;
-    --lh-b-s: 28px;
+    --lh-h-m: 2.5;
+    --lh-b-m: 1.75rem;
+    --lh-b-s: 1.75rem;
 
     /* Mobile & tablet specific styles */
     --fs-h1: var(--fs-h-l);
     --fs-h2: var(--fs-h-s);
-    --fs-h3: 20px;
+    --fs-h3: 1.25rem;
     --fs-b: var(--fs-b-s);
 }
 
@@ -318,7 +318,7 @@ header {
 }
 
 .site-logo {
-    width: 89px;
+    width: 5.625rem;
 }
 
 
@@ -469,7 +469,7 @@ footer.content-wrapper {
 
     /* HEADER */
     .site-logo {
-        width: 114px;
+        width: 7.125rem;
     }
 
     /* BUTTONS */
@@ -524,5 +524,4 @@ footer.content-wrapper {
         padding-top: 32px;
         padding-bottom: 32px;
     }
-
 }
