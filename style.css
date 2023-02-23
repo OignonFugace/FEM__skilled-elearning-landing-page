@@ -324,6 +324,7 @@ header {
     display: grid;
     gap: 10px;
     background: linear-gradient(180deg, #FFFFFF 0%, #F7F8FF 41.67%, #F1F2FF 93.23%, #F0F1FF 100%);
+    padding-bottom: 80px;
 }
 
 
@@ -371,17 +372,16 @@ header {
 
 
 /* FOOTER */
-.content-wrapper.footer {
-    background-color: var(--bunting-color);
-    margin-top: 80px;
-    padding-top: 36px;
-    padding-bottom: 36px;
-}
-
 footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+footer.content-wrapper {
+    background-color: var(--bunting-color);
+    padding-top: 36px;
+    padding-bottom: 36px;
 }
 
 
@@ -456,18 +456,6 @@ footer {
     }
 
 
-    /* COURSES SECTION */
-    .courses-section {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 30px;
-        margin-top: 50px;
-    }
-
-    .card .btn-link {
-        margin-bottom: 40px;
-    }
-
-
     /* HERO SECTION */
     .hero-section {
         grid-template-columns: 1fr 550px;
@@ -487,9 +475,22 @@ footer {
         transform: scale(1.9);
     }
 
+
+    /* COURSES SECTION */
+    .courses-section {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        margin-top: 50px;
+        padding-bottom: 140px;
+    }
+
+    .card .btn-link {
+        margin-bottom: 40px;
+    }
+
+
     /* FOOTER */
-    .content-wrapper.footer {
-        margin-top: 140px;
+    footer.content-wrapper {
         padding-top: 32px;
         padding-bottom: 32px;
     }
