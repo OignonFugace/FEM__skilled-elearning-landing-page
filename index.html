@@ -25,9 +25,25 @@
                 </div>
                 <div class="hero-section__image">
                     <picture>
-                        <source media="(min-width: 1024px)" srcset="./assets/img/image-hero-desktop.png">
-                        <source media="(min-width: 568px)" srcset="./assets/img/image-hero-tablet.png">
-                        <img src="./assets/img/image-hero-mobile.png" alt="Members count: 29k ; Course hours count: 1,451">
+                        <source 
+                            media="(min-width: 1024px)" 
+                            srcset="
+                                ./assets/img/image-hero-desktop@2x.png 2x,
+                                ./assets/img/image-hero-desktop.png
+                            "
+                        />
+                        <source 
+                            media="(min-width: 568px)" 
+                            srcset="
+                                ./assets/img/image-hero-tablet@2x.png 2x,
+                                ./assets/img/image-hero-tablet.png
+                            "
+                        />
+                        <img 
+                            srcset="./assets/img/image-hero-mobile@2x.png 2x"
+                            src="./assets/img/image-hero-mobile.png" 
+                            alt="Members count: 29k ; Course hours count: 1,451"
+                        />
                     </picture>
                 </div>
             </div>
