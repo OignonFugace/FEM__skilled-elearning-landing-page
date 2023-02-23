@@ -10,8 +10,8 @@ This is a solution to the Skilled e-learning landing page challenge on [Frontend
 - [My process](#my-process)
 	- [Built with](#built-with)
 	- [What I learned](#what-i-learned)
-	- [Continued development](#continued-development)
 	- [Questions to community](#questions-to-community)
+	- [Continued development](#continued-development)
 - [Author](#author)
 
 ## Overview
