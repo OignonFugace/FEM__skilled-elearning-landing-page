@@ -1,91 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-  
-  <title>Frontend Mentor | Skilled e-learning landing page</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Frontend Mentor | Skilled e-learning landing page</title>
 </head>
 <body>
 
-  <div id="site-wrapper">
-    <div class="content-wrapper">
-      <header>
-        <img class="site-logo" src="./assets/img/logo-dark.svg" alt="Skilled">
-        <button class="btn btn-dark">Get Started</button>
-      </header>
+        <header class="content-wrapper">
+            <img class="site-logo" src="./assets/img/logo-dark.svg" alt="Skilled">
+            <button class="btn btn-dark">Get Started</button>
+        </header>
 
-      <main>
-        <div class="hero-section">
-          <div class="hero-section__content">
-            <h1 class="hero-section__title">Maximize skill, minimize budget</h1>
-            <p class="hero-section__subhead">Our modern courses across a range of in-demand skills will give you the knowledge you need to live the life you want.</p>
-            <button class="hero-section__button btn btn-warm">Get Started</button>
-          </div>
-          <div class="hero-section__image">
-            <picture>
-              <source media="(min-width: 1024px)" srcset="./assets/img/image-hero-desktop.png">
-              <source media="(min-width: 568px)" srcset="./assets/img/image-hero-tablet.png">
-              <img src="./assets/img/image-hero-mobile.png" alt="Members count: 29k ; Course hours count: 1,451">
-            </picture>
-          </div>
-        </div>
+        <main>
+            <div class="hero-section content-wrapper">
+                <div class="hero-section__content">
+                    <h1 class="hero-section__title">Maximize skill, minimize budget</h1>
+                    <p class="hero-section__subhead">Our modern courses across a range of in-demand skills will give you the knowledge you need to live the life you want.</p>
+                    <button class="hero-section__button btn btn-warm">Get Started</button>
+                </div>
+                <div class="hero-section__image">
+                    <picture>
+                        <source media="(min-width: 1024px)" srcset="./assets/img/image-hero-desktop.png">
+                        <source media="(min-width: 568px)" srcset="./assets/img/image-hero-tablet.png">
+                        <img src="./assets/img/image-hero-mobile.png" alt="Members count: 29k ; Course hours count: 1,451">
+                    </picture>
+                </div>
+            </div>
 
-        <div class="courses-section">
-          <div class="card card-title">
-            <h2>Check out our most popular courses!</h2>
-          </div>
-          <div class="card card-course" style="--icon-path: url('./assets/img/icon-animation.svg');">
-            <div>
-              <h3>Animation</h3>
-              <p>Learn the latest animation techniques to create stunning motion design and captivate your audience.</p>
+            <div class="courses-section content-wrapper">
+                <div class="card card-title">
+                    <h2>Check out our most popular courses!</h2>
+                </div>
+                <div class="card card-course" style="--icon-path: url('./assets/img/icon-animation.svg');">
+                    <div>
+                        <h3>Animation</h3>
+                        <p>Learn the latest animation techniques to create stunning motion design and captivate your audience.</p>
+                    </div>
+                    <a href="#" class="btn-link">Get Started</a>
+                </div>
+                <div class="card card-course" style="--icon-path: url('./assets/img/icon-design.svg');">
+                    <div>
+                        <h3>Design</h3>
+                        <p>Create beautiful, usable interfaces to help shape the future of how the web looks.</p>
+                    </div>
+                    <a href="#" class="btn-link">Get Started</a>
+                </div>
+                <div class="card card-course" style="--icon-path: url('./assets/img/icon-photography.svg');">
+                    <div>
+                        <h3>Photography</h3>
+                        <p>Explore critical fundamentals like lighting, composition, and focus to capture exceptional photos.</p>
+                    </div>
+                    <a href="#" class="btn-link">Get Started</a>
+                </div>
+                <div class="card card-course" style="--icon-path: url('./assets/img/icon-crypto.svg');">
+                    <div>
+                        <h3>Crypto</h3>
+                        <p>All you need to know to get started investing in crypto. Go from beginner to advanced with this 54 hour course.</p>
+                    </div>
+                    <a href="#" class="btn-link">Get Started</a>
+                </div>
+                <div class="card card-course" style="--icon-path: url('./assets/img/icon-business.svg');">
+                    <div>
+                        <h3>Business</h3>
+                        <p>A step-by-step playbook to help you start, scale, and sustain your business without outside investment.</p>
+                    </div>
+                    <a href="#" class="btn-link">Get Started</a>
+                </div>
             </div>
-            <a href="#" class="btn-link">Get Started</a>
-          </div>
-          <div class="card card-course" style="--icon-path: url('./assets/img/icon-design.svg');">
-            <div>
-              <h3>Design</h3>
-              <p>Create beautiful, usable interfaces to help shape the future of how the web looks.</p>
-            </div>
-            <a href="#" class="btn-link">Get Started</a>
-          </div>
-          <div class="card card-course" style="--icon-path: url('./assets/img/icon-photography.svg');">
-            <div>
-              <h3>Photography</h3>
-              <p>Explore critical fundamentals like lighting, composition, and focus to capture exceptional photos.</p>
-            </div>
-            <a href="#" class="btn-link">Get Started</a>
-          </div>
-          <div class="card card-course" style="--icon-path: url('./assets/img/icon-crypto.svg');">
-            <div>
-              <h3>Crypto</h3>
-              <p>All you need to know to get started investing in crypto. Go from beginner to advanced with this 54 hour course.</p>
-            </div>
-            <a href="#" class="btn-link">Get Started</a>
-          </div>
-          <div class="card card-course" style="--icon-path: url('./assets/img/icon-business.svg');">
-            <div>
-              <h3>Business</h3>
-              <p>A step-by-step playbook to help you start, scale, and sustain your business without outside investment.</p>
-            </div>
-            <a href="#" class="btn-link">Get Started</a>
-          </div>
-        </div>
 
-      </main>
-    </div>
-  </div>
-  <div class="footer-wrapper">
-    <div class="content-wrapper footer">
-      <footer>
-        <img src="./assets/img/logo-light.svg" alt="Skilled">
-        <button class="btn btn-cold">Get Started</button>
-      </footer>
-    </div>
-  </div>
+        </main>
+
+        <footer class="footer content-wrapper">
+            <img src="./assets/img/logo-light.svg" alt="Skilled">
+            <button class="btn btn-cold">Get Started</button>
+        </footer>
 
 </body>
 </html>
+
