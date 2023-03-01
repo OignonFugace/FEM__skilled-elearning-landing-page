@@ -200,6 +200,10 @@ body {
     overflow-x: hidden;
 }
 
+#site-wrapper {
+    overflow-x: hidden;
+}
+
 .card {
     margin-top: calc(16px + 24px);
 }
