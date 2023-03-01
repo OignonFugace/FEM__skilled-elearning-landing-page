@@ -59,6 +59,11 @@ dd {
     margin: 0;
 }
 
+/* Prevents overflow on mobile devices */
+html, body {
+    overflow-x: hidden;
+}
+
 /* Set core root defaults */
 html:focus-within {
     scroll-behavior: smooth;
@@ -197,11 +202,6 @@ footer {
 body {
     font-family: var(--ff);
     color: var(--bunting-color);
-    overflow-x: hidden;
-}
-
-#site-wrapper {
-    overflow-x: hidden;
 }
 
 .card {
